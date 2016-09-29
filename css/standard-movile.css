@@ -5,7 +5,7 @@ nav div{background-color:black;border-radius:1px;margin:5px 0; padding: 7px;}
 ul{display:inline-block;list-style:none; margin:2px;padding: 2px;}
 li a{text-decoration:none}
 article{background-color:black;color:white;padding: 5px;}
-article div {margin:auto;padding:auto;}
+article div {margin:auto;}
 h1{background-color:white;border-radius:5px;color:black;font-family:'Coustard',serif; font-weight:300;text-align:center;margin:5px;}
 h2{background-color:orange;border-radius:5px;font-family:'Coustard',serif; font-weight:300;text-align:center;margin:5px auto;padding:5px;width:90%;}
 
@@ -16,10 +16,16 @@ h2{background-color:orange;border-radius:5px;font-family:'Coustard',serif; font-
 .menu-link{color:white}
 .menu-list .menu-link{color:black;transition:all 0.3s ease}
 
+/*.container-main-main{display:block;}*/
+.container-main-showing{display:inline-block;}
+.container-main-hiding{display:none}
+
 .container-image{width:70%;margin:auto;padding:5px;}
 .container-image img{border:solid;border-radius:5px;border-width:5px;border-color:white;margin:auto;padding:5px;width:95%;}
-.container-cell{border-radius:5px;display:none;padding:5px;transition:all 0.3s ease}
-.container-body{background-color:white;color:black;border-radius:5px;margin:5px;padding:5px;transition:all 0.3s ease}
+.container-cell {border-radius:5px;padding:5px;transition:all 0.3s ease;}
+.container-cell-hiding{min-height:0;max-height:0;opacity: 0;}
+.container-cell-showing{min-height:100px;max-height:auto;opacity: 1;}
+.container-body{background-color:white;color:black;border-radius:5px;margin:5px;padding:5px;transition:all 1.3s ease;}
 
 /*RESPONSIVE*/
 @media screen and (min-width: 719px){
