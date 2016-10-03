@@ -171,13 +171,17 @@
 						$image = $this.find('.image'),
 						$img = $image.find('img'),
 						x;
-
+						//var extraDiv = document.createElement("div");  // Create with DOM a <div> node
+						//$image.append(extraDiv);                              // Append div to <a>
 					// Assign image.
+						//$divNode = $image.find('div');
+						//$divNode.css('background-image', 'url(' + $img.attr('src') + ')');
 						$image.css('background-image', 'url(' + $img.attr('src') + ')');
 
 					// Set background position.
 						if (x = $img.data('position'))
 							$image.css('background-position', x);
+							//$divNode.css('background-position', x);
 
 					// Hide <img>.
 						$img.hide();

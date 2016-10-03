@@ -1174,6 +1174,10 @@
 	}
 
 	@media screen and (max-width: 480px) {
+		/*extra Guillermo*/
+		#movile-only {
+			display:none;
+		}
 
 		.row > * {
 			padding: 0 0 0 1.5em;
@@ -1389,6 +1393,10 @@
 	}
 
 	@media screen and (max-width: 360px) {
+		/*extra Guillermo*/
+		#movile-only {
+			display:none;
+		}
 
 		.row > * {
 			padding: 0 0 0 1.5em;
@@ -1682,7 +1690,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #ff7800;
 		}
 
 	strong, b {
@@ -1925,7 +1933,7 @@
 			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
 			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
 			transition: opacity 0.2s ease, transform 0.2s ease;
-			background: #ffffff;
+			background: #f57300;
 			border-radius: 3em;
 			content: '';
 			height: 100%;
@@ -2009,7 +2017,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: #f57300 !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -2368,8 +2376,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #ff7800;
+			box-shadow: 0 0 0 1px #ff7800;
 		}
 
 	.select-wrapper {
@@ -3038,7 +3046,7 @@
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(170, 90, 40, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3253,15 +3261,15 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #202020;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #000;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #390d3b;
 		}
 
 		.wrapper.style2-alt {
@@ -3269,7 +3277,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #322626;
 		}
 
 		.wrapper.style3-alt {
@@ -3534,7 +3542,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #000;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3771,14 +3779,14 @@
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #fff;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #fff, #ff7800);
+				background-image: -webkit-linear-gradient(to right, #fff, #ff7800);
+				background-image: -ms-linear-gradient(to right, #fff, #ff7800);
+				background-image: linear-gradient(to right, #fff, #ff7800);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3787,7 +3795,7 @@
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgba(190, 80, 0, 0.85);
 			}
 
 			#sidebar nav a.active {
@@ -3867,7 +3875,7 @@
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #ff7800;
 						}
 
 		}
@@ -3884,7 +3892,7 @@
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		/*background-image: url("images/background.jpg");*/
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
