@@ -3770,9 +3770,9 @@
 
 			#sidebar nav a:before, #sidebar nav a:after {
 				border-radius: 0.2em;
-				bottom: 0;
+				bottom: 20%;
 				content: '';
-				height: 0.2em;
+				height: 0.1em;
 				position: absolute;
 				right: 0;
 				width: 100%;
