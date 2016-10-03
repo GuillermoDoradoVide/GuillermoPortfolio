@@ -3926,6 +3926,19 @@
 
 		}
 
+		/* Guillermo Proyects selections */
+		.proyect-selection {
+			text-align: center;
+		}
+
+		#p1:focus, #p1:active  {
+			color:red !important;
+		}
+
+		.proyect-selection-1 {
+			
+		}
+
 		/* Guillermo Video */
 		.video {
 			border: solid #ff7800 3px;

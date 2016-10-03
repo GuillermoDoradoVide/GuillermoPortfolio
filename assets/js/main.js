@@ -236,7 +236,69 @@
 			  	});
 			// Kick off one resize to fix all videos on page load
 			}).resize();
+			
+			// GUILLERMO, PROYECT MANAGER
+			$toolbar = $('#one');
+			$gamesMenu = $toolbar.find('#p1');
+			$scenesMenu = $toolbar.find('#p2');
+			$othersMenu = $toolbar.find('#p3');
+			var gamesProyects = $('.proyect-selection-1');
+			$proyects_game = $("#wrapper").find(gamesProyects);
+			var scenesProyects = $('.proyect-selection-2');
+			$proyects_scenes = $("#wrapper").find(scenesProyects);
+			var othersProyects = $('.proyect-selection-3');
+			$proyects_others = $("#wrapper").find(othersProyects);
+			$proyects_scenes.hide();
+			$proyects_others.hide();
+
+			$gamesMenu.click(function() {
+				if($proyects_game.is( ":hidden" ) && $proyects_scenes.is( ":visible" )) {
+					$proyects_scenes.fadeOut("slow", "swing", function() {
+						$proyects_game.fadeIn("slow", "swing");
+					});
+					$scenesMenu.focusout();
+					$gamesMenu.focusin();
+				}
+				else if ($proyects_game.is( ":hidden" ) && $proyects_others.is( ":visible" )) {
+					$proyects_others.fadeOut("slow", "swing", function() {
+						$proyects_game.fadeIn("slow", "swing");
+					});
+					$othersMenu.focusout();
+					$gamesMenu.focusin();
+				}
+			});
+			$scenesMenu.click(function() {
+				if($proyects_scenes.is( ":hidden" ) && $proyects_game.is( ":visible" )) {
+					$proyects_game.fadeOut("slow", "swing", function() {
+						$proyects_scenes.fadeIn("slow", "swing");
+					});
+					$gamesMenu.focusout();
+					$scenesMenu.focusin();
+				}
+				else if ($proyects_scenes.is( ":hidden" ) && $proyects_others.is( ":visible" )) {
+					$proyects_others.fadeOut("slow", "swing", function() {
+						$proyects_scenes.fadeIn("slow", "swing");
+					});
+					$othersMenu.focusout();
+					$scenesMenu.focusin();
+				}
+			});
+			$othersMenu.click(function() {
+				if($proyects_others.is( ":hidden" ) && $proyects_game.is( ":visible" )) {
+					$proyects_game.fadeOut("slow", "swing", function() {
+						$proyects_others.fadeIn("slow", "swing");
+					});
+					$gamesMenu.focusout();
+					$othersMenu.focusin();
+				}
+				else if ($proyects_others.is( ":hidden" ) && $proyects_scenes.is( ":visible" )) {
+					$proyects_scenes.fadeOut("slow", "swing", function() {
+						$proyects_others.fadeIn("slow", "swing");
+					});
+					$scenesMenu.focusout();
+					$othersMenu.focusin();
+				}
+			});
 
 	});
-
 })(jQuery);
