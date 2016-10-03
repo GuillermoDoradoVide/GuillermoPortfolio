@@ -6,14 +6,16 @@ window.onload = init;
 function expandirInfo(num_proyecto) {
 	var container;
 		container = num_proyecto.getElementsByClassName("container-cell")[0];
-		if (container.classList.contains("container-cell-hiding")) {
-			container.classList.remove("container-cell-hiding");
-			container.classList.add("container-cell-showing");
+		if (container.classList.contains("hidden")) {
+			container.classList.remove("hidden");
+			container.classList.add("visible");
+
+			container.style.height = container.style.height;
 			hideOtherProyects(num_proyecto);
 		}
 		else {
-			container.classList.remove("container-cell-showing");
-			container.classList.add("container-cell-hiding");
+			container.classList.add("hidden");
+			container.classList.remove("visible");
 			unhideOtherProyects(num_proyecto);
 		}
 }
@@ -23,8 +25,8 @@ function hideOtherProyects(num_proyecto) {
 	for(var x = 0; x < sub_menu.length; x++) {
 		if( sub_menu[x] !== num_proyecto) {
 			container = sub_menu[x].parentNode;
-			container.classList.remove("container-main-showing");
-			container.classList.add("container-main-hiding");
+			container.classList.remove("visible");
+			container.classList.add("hidden");
 		}
 	}
 }
@@ -34,8 +36,8 @@ function unhideOtherProyects(num_proyecto) {
 	for(var x = 0; x < sub_menu.length; x++) {
 		if( sub_menu[x] !== num_proyecto) {
 			container = sub_menu[x].parentNode;
-			container.classList.remove("container-main-hiding");
-			container.classList.add("container-main-showing");
+			container.classList.add("visible");
+			container.classList.remove("hidden");
 		}
 	}
 }
