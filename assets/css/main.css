@@ -1630,7 +1630,7 @@
 	}
 
 	body {
-		background: #312450;
+		background: #202020;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1729,10 +1729,10 @@
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #ff7800, #fff);
+				background-image: -webkit-linear-gradient(to right, #ff7800, #fff);
+				background-image: -ms-linear-gradient(to right, #ff7800, #fff);
+				background-image: linear-gradient(to right, #ff7800, #fff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3257,7 +3257,7 @@
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #000;
 		}
 
 		.wrapper.style1 {
@@ -3388,7 +3388,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #390d3b;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3436,7 +3436,7 @@
 					}
 
 						#header > nav > ul > li a:hover {
-							color: rgba(255, 255, 255, 0.55);
+							color: rgba(190, 80, 0, 0.8);
 						}
 
 						#header > nav > ul > li a.active {
@@ -3924,4 +3924,21 @@
 				background-attachment: scroll;
 			}
 
+		}
+
+		/* Guillermo Video */
+		.video {
+			border: solid #ff7800 3px;
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+			margin:15px auto;
+		}
+		.video iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
