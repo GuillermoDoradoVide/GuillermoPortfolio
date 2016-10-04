@@ -3931,8 +3931,11 @@
 			text-align: center;
 		}
 
-		#p1:focus, #p1:active  {
-			color:red !important;
+		.active-button:after {
+			background-color: #ff7800;
+			border:solid 3px;
+			opacity: 0.5;
+			transform: scale(1);
 		}
 
 		.proyect-selection-1 {

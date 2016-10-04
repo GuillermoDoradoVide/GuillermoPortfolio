@@ -251,52 +251,72 @@
 			$proyects_scenes.hide();
 			$proyects_others.hide();
 
+			$gamesMenu.addClass("active-button");
+
 			$gamesMenu.click(function() {
 				if($proyects_game.is( ":hidden" ) && $proyects_scenes.is( ":visible" )) {
+					$scenesMenu.removeClass("active-button");
 					$proyects_scenes.fadeOut("slow", "swing", function() {
 						$proyects_game.fadeIn("slow", "swing");
 					});
 					$scenesMenu.focusout();
 					$gamesMenu.focusin();
+					
+					$gamesMenu.addClass("active-button");
 				}
 				else if ($proyects_game.is( ":hidden" ) && $proyects_others.is( ":visible" )) {
+					$othersMenu.removeClass("active-button");
 					$proyects_others.fadeOut("slow", "swing", function() {
 						$proyects_game.fadeIn("slow", "swing");
 					});
 					$othersMenu.focusout();
 					$gamesMenu.focusin();
+					
+					$gamesMenu.addClass("active-button");
 				}
 			});
 			$scenesMenu.click(function() {
 				if($proyects_scenes.is( ":hidden" ) && $proyects_game.is( ":visible" )) {
+					$gamesMenu.removeClass("active-button");
 					$proyects_game.fadeOut("slow", "swing", function() {
 						$proyects_scenes.fadeIn("slow", "swing");
 					});
 					$gamesMenu.focusout();
 					$scenesMenu.focusin();
+					
+					$scenesMenu.addClass("active-button");
 				}
 				else if ($proyects_scenes.is( ":hidden" ) && $proyects_others.is( ":visible" )) {
+					$othersMenu.removeClass("active-button");
 					$proyects_others.fadeOut("slow", "swing", function() {
 						$proyects_scenes.fadeIn("slow", "swing");
 					});
 					$othersMenu.focusout();
 					$scenesMenu.focusin();
+					
+					$scenesMenu.addClass("active-button");
 				}
 			});
 			$othersMenu.click(function() {
 				if($proyects_others.is( ":hidden" ) && $proyects_game.is( ":visible" )) {
+					$gamesMenu.removeClass("active-button");
 					$proyects_game.fadeOut("slow", "swing", function() {
 						$proyects_others.fadeIn("slow", "swing");
 					});
 					$gamesMenu.focusout();
 					$othersMenu.focusin();
+					
+					$othersMenu.addClass("active-button");
 				}
 				else if ($proyects_others.is( ":hidden" ) && $proyects_scenes.is( ":visible" )) {
+					$scenesMenu.removeClass("active-button");
 					$proyects_scenes.fadeOut("slow", "swing", function() {
 						$proyects_others.fadeIn("slow", "swing");
 					});
 					$scenesMenu.focusout();
 					$othersMenu.focusin();
+					
+					$othersMenu.addClass("active-button");
 				}
 			});
 
