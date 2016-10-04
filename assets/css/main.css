@@ -1179,6 +1179,11 @@
 			display:none;
 		}
 
+		.details-list .two-column {
+			display: block;
+			width: 100%;
+		}
+
 		.row > * {
 			padding: 0 0 0 1.5em;
 		}
@@ -3940,6 +3945,18 @@
 
 		.proyect-selection-1 {
 			
+		}
+
+		/* Guillermo proyect detail */
+		.details-list {
+			display:block;
+			margin:auto;
+		}
+		.two-column {
+			display: inline-block;
+			width: 45%;
+			margin:10px;
+			vertical-align: top;
 		}
 
 		/* Guillermo Video */

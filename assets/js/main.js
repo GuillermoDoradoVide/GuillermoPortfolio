@@ -208,7 +208,7 @@
 
 						}
 					});
-
+					/*
 			// Find all YouTube videos
 			var $allVideos = $("iframe[src^='//www.youtube.com']"),
 			    // The element that is fluid width
@@ -224,7 +224,6 @@
 			});
 			// When the window is resized
 			$(window).resize(function() {
-				console.log("hola");
 		  		var newWidth = $fluidEl.width();
 			 	// Resize all videos according to their own aspect ratio
 			 	$allVideos.each(function() {
@@ -236,7 +235,7 @@
 			  	});
 			// Kick off one resize to fix all videos on page load
 			}).resize();
-			
+			*/
 			// GUILLERMO, PROYECT MANAGER
 			$toolbar = $('#one');
 			$gamesMenu = $toolbar.find('#p1');
