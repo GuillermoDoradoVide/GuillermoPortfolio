@@ -3988,3 +3988,9 @@
 			display: inline-block;
 			background: transparent;
 		}
+
+		#image_small {
+		width: 40%;
+		display:block;
+		margin:auto;
+		}
